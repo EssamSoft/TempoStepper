@@ -145,6 +145,7 @@ public enum TempoStepperState {
     super.layoutSubviews()
     // Text field
     valueTextField.textColor = valueTextColor
+    valueTextField.keyboardType = showIntValue ? .numberPad : .decimalPad
     valueTextField.font = valueFont
     valueTextField.text = showIntValue ? "\(Int(value))" : "\(value)"
     // Increase button
